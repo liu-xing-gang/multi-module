@@ -5,6 +5,58 @@
     <title>FreeMarker基本用法</title>
 </head>
 <body>
-    <h1>${hello}</h1>
+    <pre>
+        ctrl+al+l 格式化代码
+        $ {变量名} 插值
+
+        if .. elseif .. else
+
+        list指令
+
+        include指令
+
+        使用内建函数
+        {
+            user?html 给出 user 的HTML转义版本， 比如 & 会由 &amp; 来代替
+            user?upper_case 给出 user 值的大写版本 (比如 "JOHN DOE" 来替代 "John Doe")
+            user?length 给出 user 值中 字符的数量(对于 "John Doe" 来说就是8)
+            animals?size 给出 animals 序列中 项目 的个数(我们示例数据模型中是3个)
+            animal.protected?string("Y", "N") 基于 animal.protected 的布尔值来返回字符串 "Y" 或 "N"。
+            fruits?join(", ") 通过连接所有项，将列表转换为字符串， 在每个项之间插入参数分隔符(比如 "orange,banana")
+            user?starts_with("J") 根据 user 的首字母是否是 "J" 返回布尔值true或false。
+
+        }
+        处理不存在的变量如：Welcome $ {user!"visitor"}
+
+
+    </pre>
+    <ul>
+        <li>${hello}</li>
+        <li>
+            <#if (2<1) >
+                0
+            <#elseif (2>1)>
+                1
+            <#else>
+                what
+            </#if>
+        </li>
+        <li>
+            <table border="1">
+                <#list animals as animal>
+                <tr>
+                    <td>${animal.name}</td>
+                    <td>${animal.size}</td>
+                    <td>${animal.price}</td>
+                </tr>
+                </#list>
+            </table>
+        </li>
+        <li>
+            <#include "default/_header.html">
+            <#include "default/_footer.html">
+        </li>
+    </ul>
+
 </body>
 </html>
