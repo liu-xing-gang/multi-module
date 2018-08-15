@@ -12,7 +12,7 @@ import java.util.Map;
 
 @Controller
 public class HelloController {
-    @RequestMapping("/")
+    @RequestMapping("/hello")
     public String index(Model m){
         List<Object> animals = new ArrayList<Object>();
         for(int i=0; i<3; i ++){
