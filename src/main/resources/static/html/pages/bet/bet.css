@@ -48,7 +48,7 @@ i {
 .choices .btn-choice.active {
     border: 1px solid #d20b2a;
     color: #d20b2a;
-    background: url(../../images/btn-type-active.png) no-repeat right bottom;
+    background: url(/assets/images/btn-type-active.png) no-repeat right bottom;
     background-size: .2rem .2rem
 }
 
@@ -72,7 +72,7 @@ i {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    background: url(../../images/shake.png) no-repeat left center;
+    background: url(/assets/images/shake.png) no-repeat left center;
     background-size: contain
 }
 
@@ -417,17 +417,17 @@ i {
 }
 
 .bet-confirm .btn-option-self>div span::before {
-    background: url(../../images/icon-add.png) no-repeat center;
+    background: url(/assets/images/icon-add.png) no-repeat center;
     background-size: .28rem .28rem
 }
 
 .bet-confirm .btn-option-empty>div span::before {
-    background: url(../../images/icon-trash.png) no-repeat center;
+    background: url(/assets/images/icon-trash.png) no-repeat center;
     background-size: .28rem .28rem
 }
 
 .bet-confirm .btn-option-robot>div span::before {
-    background: url(../../images/icon-add.png) no-repeat center;
+    background: url(/assets/images/icon-add.png) no-repeat center;
     background-size: .28rem .28rem
 }
 
@@ -467,7 +467,7 @@ i {
     bottom: 0;
     width: 100%;
     height: .16rem;
-    background: url(../../images/sawtooth-down.png) repeat;
+    background: url(/assets/images/sawtooth-down.png) repeat;
     background-size: contain
 }
 
@@ -515,7 +515,7 @@ i {
 .bet-confirm .list-item .table {
     width: 100%;
     padding: .2rem 0 .24rem;
-    background: #fff url(../../images/icon-link.png) no-repeat 6.4rem center;
+    background: #fff url(/assets/images/icon-link.png) no-repeat 6.4rem center;
     background-size: .28rem .28rem
 }
 
@@ -985,7 +985,7 @@ i {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background: url(../../images/arrow-down-2.png) no-repeat center;
+    background: url(/assets/images/arrow-down-2.png) no-repeat center;
     background-size: .32rem .32rem;
     transition: .3s ease;
     -webkit-transition: .3s ease;
@@ -1179,14 +1179,14 @@ i {
 .btn-analysis::before {
     left: -.4rem;
     top: 50%;
-    background: url(../../images/lottery_football.png) no-repeat;
+    background: url(/assets/images/lottery_football.png) no-repeat;
     background-size: .24rem .24rem
 }
 
 .btn-analysis::after {
     right: -.4rem;
     top: 50%;
-    background: url(../../images/arrow-r-2.png) no-repeat;
+    background: url(/assets/images/arrow-r-2.png) no-repeat;
     background-size: .24rem .24rem
 }
 
@@ -1493,7 +1493,7 @@ i {
 }
 
 .single-pass .a-checkbox input[type=checkbox]:checked:before {
-    background: url(../../images/check-box_fill.png) no-repeat center;
+    background: url(/assets/images/check-box_fill.png) no-repeat center;
     background-size: cover
 }
 
@@ -1619,7 +1619,7 @@ i {
 
 .tabs .tab-item.active {
     color: #d94441;
-    background: url(../../images/icon-check-red.png) no-repeat right bottom;
+    background: url(/assets/images/icon-check-red.png) no-repeat right bottom;
     background-size: .32rem .32rem
 }
 

@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="../../mui/css/mui.min.css">
-    <link rel="stylesheet" href="../../app.css" />
+    <link rel="stylesheet" href="mui/css/mui.min.css">
+    <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="bet.css">
-    <script src="../../app.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <a href="#topPopover" class="btn-basic btn-ar">
-                <img src="../../images/icon-line-chart.png" alt="" class="img-responsive">
+                <img src="/assets/images/icon-line-chart.png" alt="" class="img-responsive">
                 <span class="btn-basic-txt">助手</span>
             </a>
         </header>
@@ -222,9 +222,9 @@
                     </table>
                 </div>
                 <div :class="showTable === true ? 'etf-item active' : 'etf-item'" v-if="oCurrent.type === '普通'">
-                    <div class="toggle-layer" @click="showTable = !showTable"><img src="../../images/arrow-down-2.png" alt=""></div>
+                    <div class="toggle-layer" @click="showTable = !showTable"><img src="/assets/images/arrow-down-2.png" alt=""></div>
                     <a class="random-select">
-                        <img src="../../images/icon-random-select.png" alt="" class="img-responsive">
+                        <img src="/assets/images/icon-random-select.png" alt="" class="img-responsive">
                     </a>
                     <p class="random-txt font28 paddv10">
                         至少选2个号，猜对任意2个开奖将号码即中<span class="color2"></span>6</span>元
@@ -285,7 +285,7 @@
                     
                 </div>
                 <div :class="showTable === true ? 'etf-item active' : 'etf-item'" v-else-if="oCurrent.type === '胆拖'">
-                    <div class="toggle-layer" @click="showTable = !showTable"><img src="../../images/arrow-down-2.png" alt=""></div>
+                    <div class="toggle-layer" @click="showTable = !showTable"><img src="/assets/images/arrow-down-2.png" alt=""></div>
                     <div class="random-txt font32">
                         <!-- 至少选2个号，猜对任意2个开奖将号码即中<span class="color2"></span>6</span>元 -->
                         <a href="">什么是胆拖？</a>
@@ -445,10 +445,10 @@
         </div>
     </div>
 
-    <script src="../../libs/vue.min.js"></script>
-    <script src="../../libs/layer_mobile/layer.js"></script>
-    <script src="../../libs/swiper.min.js"></script>
-    <script src="../../mui/js/mui.min.js"></script>
+    <script src="libs/vue.min.js"></script>
+    <script src="libs/layer_mobile/layer.js"></script>
+    <script src="libs/swiper.min.js"></script>
+    <script src="mui/js/mui.min.js"></script>
     <script>
         var vm = new Vue({
             el: '#app',

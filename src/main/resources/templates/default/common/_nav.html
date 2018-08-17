@@ -1,10 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<nav class="navbar">
+    <div class="table">
+        <div class="table-cell">
+            <a href="/" class="nav-item">
+                <div class="nav-box nav-home"></div>
+                <div class="nav-txt">首页</div>
+            </a>
+        </div>
+        <div class="table-cell">
+            <a href="/award" class="nav-item">
+                <div class="nav-box nav-award"></div>
+                <div class="nav-txt">开奖</div>
+            </a>
+        </div>
+        <div class="table-cell">
+            <a href="/discover" class="nav-item">
+                <div class="nav-box nav-discover"></div>
+                <div class="nav-txt">发现</div>
+            </a>
+        </div>
+        <div class="table-cell">
+            <a href="/mine" class="nav-item">
+                <div class="nav-box nav-mine"></div>
+                <div class="nav-txt">我的</div>
+            </a>
+        </div>
+    </div>
+</nav>
+<script>
+    (function () {
+        // 高亮当前选项
+        var href = window.location.href,
+            arrNavItems = document.getElementsByClassName('nav-item'),
+            arr = new Array;
+
+        for (var i = 0; i < arrNavItems.length; i++) {
+            arr.push(arrNavItems[i].href)
+        }
+
+        for (var index = 0; index < arr.length; index++) {
+            if (arr[index].indexOf(window.location.pathname) != -1) {
+                if (index === 0) {
+                    for (var i = 0; i < arrNavItems.length; i++) {
+                        arrNavItems[i].className = 'nav-item'
+                    }
+                    arrNavItems[0].className = 'nav-item active'
+                    break
+                } else {
+                    arrNavItems[index].className = 'nav-item active'
+                }
+            }
+        }
+
+    })()
+</script>

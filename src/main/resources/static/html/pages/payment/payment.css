@@ -19,7 +19,7 @@ b{font-weight:normal}
 .payment .checkbox input::before{font-size:.44rem}
 .payment .red-envelope{font-size:.24rem}
 .payment .red-envelope .btn-toggle{position:relative;display:block;padding-right:.4rem;color:#b5a897}
-.payment .red-envelope .btn-toggle::after{content:'';position:absolute;top:0;right:0;bottom:0;width:.28rem;height:.28rem;margin:auto;background:url(../../images/arrow-down-2.png) no-repeat right center;background-size:.28rem .28rem;transition:.3s ease;-webkit-transition:.3s ease;-moz-transition:.3s ease;-ms-transition:.3s ease;-o-transition:.3s ease}
+.payment .red-envelope .btn-toggle::after{content:'';position:absolute;top:0;right:0;bottom:0;width:.28rem;height:.28rem;margin:auto;background:url(/assets/images/arrow-down-2.png) no-repeat right center;background-size:.28rem .28rem;transition:.3s ease;-webkit-transition:.3s ease;-moz-transition:.3s ease;-ms-transition:.3s ease;-o-transition:.3s ease}
 .payment .red-envelope .btn-toggle.active::after{transform:rotate(180deg);-webkit-transform:rotate(180deg);-moz-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg)}
 .payment .red-envelope .box{position:relative;width:1.8rem;height:1.8rem;margin:0 auto}
 .payment .red-envelope .box .checkbox{right:0;bottom:unset}
@@ -79,7 +79,7 @@ b{font-weight:normal}
 .recharge .btn-coin.active{
     border: 1px solid #d94441;
     color: #d94441;
-    background: url(../../images/icon-check-red.png) no-repeat right bottom;
+    background: url(/assets/images/icon-check-red.png) no-repeat right bottom;
     background-size: .28rem .28rem;
 }
 

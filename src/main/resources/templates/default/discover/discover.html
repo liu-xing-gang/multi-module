@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <#include "default/common/_header.html">
+    <link rel="stylesheet" href="/assets/css/discover.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="title">
+            <span>发现</span>
+        </header>
+        <main class="container">
+            <section class="discover">
+                <div class="table-view">
+                    <div class="entry arrow-r3">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-rein.png" alt=""></div>
+                            <div class="inline-block ebox-txt">世界杯猜球</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-view margt30">
+                    <div class="entry arrow-r3 ">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-circle.png" alt=""></div>
+                            <div class="inline-block ebox-txt">圈子</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="table-view margt30">
+                    <div class="entry arrow-r3">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-circle.png" alt=""></div>
+                            <div class="inline-block ebox-txt">免费刮卡</div>
+                        </a>
+                    </div>
+                    <div class="entry arrow-r3">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-rein.png" alt=""></div>
+                            <div class="inline-block ebox-txt">大神推荐</div>
+                        </a>
+                    </div>
+                    <div class="entry arrow-r3">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-circle.png" alt=""></div>
+                            <div class="inline-block ebox-txt">AI看球</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="table-view margt30">
+                    <div class="entry arrow-r3">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-circle.png" alt=""></div>
+                            <div class="inline-block ebox-txt">减188元</div>
+                        </a>
+                    </div>
+                    <div class="entry arrow-r3">
+                        <a href="" class="entry-link">
+                            <div class="inline-block ebox"><img src="/assets/images/icon-circle.png" alt=""></div>
+                            <div class="inline-block ebox-txt">趣味测试</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <#include "default/common/_nav.html">
+    </div>
+    <#include "default/common/_footer.html">
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                arrSpecies: []
+            },
+            mounted: function() {},
+            methods: {}
+        })
+
+        var swiperNews = new Swiper('.news .swiper-container', {
+            allowTouchMove: false,
+            direction: 'vertical',
+            autoplay: true,
+            loop: true,
+            speed: 1000,
+        });
+    </script>
+
+</body>
+
+</html>

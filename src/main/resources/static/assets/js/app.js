@@ -194,10 +194,10 @@ CcpClient.Drawing.prototype = {
         this.ctx.lineWidth = 1;
         this.ctx.strokeStyle = '#e5e2d3';
         this.ctx.beginPath()
-        this.drawImg('../../images/icon-circle-default.png', this.points, this.ctx)
-        this.drawImg('../../images/icon-circle-win.png', this.winPoints, this.ctx)
-        this.drawImg('../../images/icon-circle-draw.png', this.drawPoints, this.ctx)
-        this.drawImg('../../images/icon-circle-lose.png', this.losePoints, this.ctx)
+        this.drawImg('/assets/images/icon-circle-default.png', this.points, this.ctx)
+        this.drawImg('/assets/images/icon-circle-win.png', this.winPoints, this.ctx)
+        this.drawImg('/assets/images/icon-circle-draw.png', this.drawPoints, this.ctx)
+        this.drawImg('/assets/images/icon-circle-lose.png', this.losePoints, this.ctx)
         var linePoints = this.appendPoints(this.data, 'time')
         this.lineTo(linePoints, this.ctx)
     },

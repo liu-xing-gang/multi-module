@@ -131,12 +131,12 @@
     width: 5.1rem; margin: .9rem auto .56rem; padding-left: .9rem;
     font-size: .44rem; line-height: 1;
     color: #fff;
-    background: url(../../images/icon-detail-checked.png) no-repeat left center;
+    background: url(/assets/images/icon-detail-checked.png) no-repeat left center;
     background-size: contain;
 }
 
 .bg-1{
-    background: url(../../images/bg-1.jpg) no-repeat;
+    background: url(/assets/images/bg-1.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -275,7 +275,7 @@
     -moz-border-radius: 0 0 .32rem .32rem;
     -ms-border-radius: 0 0 .32rem .32rem;
     -o-border-radius: 0 0 .32rem .32rem;
-    background: #fcd85e url(../../images/icon-trangle-d1.png) no-repeat center;
+    background: #fcd85e url(/assets/images/icon-trangle-d1.png) no-repeat center;
     background-size: .4rem .4rem;
 }
 
@@ -308,7 +308,7 @@
 }
 
 .active .bt-view-rules::after{
-    background: #fcd85e url(../../images/icon-trangle-d2.png) no-repeat center;
+    background: #fcd85e url(/assets/images/icon-trangle-d2.png) no-repeat center;
     background-size: .4rem .4rem;
 }
 

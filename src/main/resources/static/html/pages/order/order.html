@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="stylesheet" href="../../mui/css/mui.min.css">
-    <link rel="stylesheet" href="../../app.css" />
+    <link rel="stylesheet" href="mui/css/mui.min.css">
+    <link rel="stylesheet" href="app.css" />
     <link rel="stylesheet" href="order.css">
-    <script src="../../app.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body>
@@ -19,7 +19,7 @@
             <a class="mui-action-back mui-icon mui-icon-left-nav" id="back"></a>
             <span>普通投注</span>
             <a href="#topPopover" class="btn-basic btn-ar">
-                <img src="../../images/icon-line-chart.png" alt="" class="img-responsive">
+                <img src="/assets/images/icon-line-chart.png" alt="" class="img-responsive">
                 <span class="btn-basic-txt">晒单</span>
             </a>
         </header>
@@ -27,7 +27,7 @@
             <section class="order-header waiting">
                 <div class="table paddV30">
                     <div class="table-cell w80">
-                        <div class="box"><img src="../../images/type-1.png" alt="" class="img-responsive"></div>
+                        <div class="box"><img src="/assets/images/type-1.png" alt="" class="img-responsive"></div>
                     </div>
                     <div class="table-cell">
                         <span class="font32">双色球</span><span class="font28">2018006期</span>
@@ -72,7 +72,7 @@
                         <div class="table-cell">
                             <span class="font32">1条</span>
                             <span class="btn-display">
-                                <img src="../../images/arrow-down-2.png" alt="" class="img-responsive">
+                                <img src="/assets/images/arrow-down-2.png" alt="" class="img-responsive">
                             </span>
                         </div>
                     </div>
@@ -124,8 +124,8 @@
             </section>
         </main>
     </div>
-    <script src="../../libs/vue.min.js"></script>
-    <script src="../../mui/js/mui.min.js"></script>
+    <script src="libs/vue.min.js"></script>
+    <script src="mui/js/mui.min.js"></script>
     <script>
         new Vue({
             el: '#app',
@@ -138,7 +138,7 @@
                 var btnArray = ['取消', '确定'];
                 mui.confirm('删除本订单信息将无法还原', '删除本订单', btnArray, function(e) {
                     if (e.index == 1) {
-                        window.location.href="../../index.html"
+                        window.location.href="index.html"
                     } else {
                     }
                 })
