@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <#include "default/common/_header.html">
+    <link rel="stylesheet" href="/assets/css/activities.css">
+</head>
+
+<body>
+    <div id="app">
+        <header class="title">
+            <a class="mui-action-back mui-icon mui-icon-left-nav" id="back"></a>
+            <span>活动中心</span>
+        </header>
+        <main class="container">
+            <ul class="activities">
+                <li v-for="activity in arrActivities">
+                    <a :href="activity.href">
+                        <div class="activity-box">
+                            <img :src="activity.img" alt="" class="img-responsive">
+                        </div>
+                        <div class="activity-txt font32" v-text="activity.txt"></div>
+                    </a>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <#include "default/common/_footer">
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+               arrActivities: [
+                   {img: '/assets/images/activity_01.jpg', txt: '返奖大转盘，百分百中奖', href: ''},
+                   {img: '/assets/images/activity_03.jpg', txt: '轻松赚钱就点我', href: ''},
+                   {img: '/assets/images/activity_06.jpg', txt: '活动日期，长期有效', href: 'list.html'},
+               ]
+            },
+        })
+    </script>
+
+</body>
+
+</html>

@@ -9,31 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @Controller
-@RequestMapping("/")
+
 public class IndexController {
-
-    @RequestMapping(value={"", "index"})
-    public String index(ModelMap mm){
-        mm.addAttribute("name", "Hello Tom");
-        return "default/index";
-    }
-
-    @RequestMapping("award")
-    public String award(Model m){
-        return "default/award/award";
-    }
-
-    @RequestMapping("discover")
-    public String discover(Model m){
-        return "default/discover/discover";
-    }
-
-    @RequestMapping("mine")
-    public String mine(Model m){
-        return "default/mine/mine";
-    }
-
-
 
     /**
      * banner轮播图
@@ -74,6 +51,5 @@ public class IndexController {
     public Object apiSpecies(Model m){
         return null;
     }
-
 
 }
