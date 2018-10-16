@@ -64,4 +64,12 @@ public class HelloController {
         return "success";
     }
 
+    /**
+     * JWT实现token-based会话管理
+     */
+    @RequestMapping("/token-based")
+    public String tokenBased(Model m){
+        return "default/token-based";
+    }
+
 }

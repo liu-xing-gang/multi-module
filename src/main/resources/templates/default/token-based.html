@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>JWT实现token-based会话管理</header>
+    <pre>
+        >1生成
+        JWT实际上是由三个部分组成
+        1.header部分的结构以及它的生成方法
+        header{
+            typ: 'JWT', // 用来标识整个token字符串是一个JWT字符串
+            alg: 'HS256' // 用来说明这个JWT签发的时候所使用的签名和摘要算法
+        }
+
+        JWT的header部分是把前面的json结构，经过Base64Url编码之后生成出来的
+
+        2.payload部分的结构和生成过程
+        payload{
+            sub: '001',
+            name: 'Tom Cat',
+            admin: true
+        }
+        它的一个“属性值对”其实就是一个claim.
+        根据JWT的标准，这些claims可以分为以下三种类型：
+        一、Reserved claims（保留）
+        (1)iss(Issuser)：代表这个JWT的签发主体
+        (2)sub(Subject)：代表这个JWT的主体，即它的所有人
+        (3)aud(Audience)：代表这个JWT的接收对象
+        (4)exp(Expiration time)：是一个时间戳，代表这个JWT的过期时间
+        (5)nbf(Not Before)：是一个时间戳，代表这个JWT生效的开始时间，意味着在这个时间之前验证JWT是会失败的
+        (6)iat(Issued at)：是一个时间戳，代表这个JWT的签发时间
+        (7)jti(JWT ID)：是JWT的唯一标识。
+        二、Public claims，略（不重要）
+        三、Private claims，这个指的就是自定义的claim
+
+        把这个json结构做base64url编码之后，就能生成payload部分的串
+
+        3.signature部分的生成过程
+        签名是把header和payload对应的json结构进行base64url编码之后得到的两个串用英文句点号拼接起来，然后根据header里面alg指定的签名算法生成出来的
+        以alg: HS256为例：
+                          var str = HMACSHA256(base64UrlEncode(header)+'.'+base64UrlEncode(payload), secret)
+                          return base64UrlEncode(str)
+
+        >2JWT的验证过程
+    </pre>
+</body>
+</html>
